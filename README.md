@@ -14,38 +14,6 @@ The project has the following dependencies (from Udacity's seed project):
 - gcc/g++ >= 5.4
 - Udacity's simulator.
 
-For instructions on how to install these components on different operating systems, please, visit [Udacity's seed project](https://github.com/udacity/CarND-Extended-Kalman-Filter-Project). As this particular implementation was done on Mac OS, the rest of this documentation will be focused on Mac OS. I am sorry to be that restrictive.
-
-In order to install the necessary libraries, use the [install-mac.sh](./install-mac.sh).
-
-# Compiling and executing the project
-
-These are the suggested steps:
-
-- Clone the repo and cd to it on a Terminal.
-- Create the build directory: `mkdir build`
-- `cd build`
-- `cmake ..`
-- `make`: This will create two executables
-  - `ExtendedKF` : EKF implementation.
-  - `Test` : Simple unit tests using [Catch](https://github.com/philsquared/Catch/blob/master/docs/tutorial.md).
-
-## Running the tests
-
-From the build directory, execute `./Tests`. The output should be something similar to this:
-
-```
-ERROR - CalculateRMSE () - The estimations vector is empty
-ERROR - CalculateRMSE () - The ground-truth vector is empty
-ERROR - CalculateRMSE () - The ground-truth and estimations vectors must have the same size.
-ERROR - CalculateJacobian () - The state vector must have size 4.
-ERROR - CalculateJacobian () - Division by Zero
-===============================================================================
-All tests passed (13 assertions in 2 test cases)
-```
-
-These unit tests were an experiment with [Catch](https://github.com/philsquared/Catch/blob/master/docs/tutorial.md). It looks like a good and simple unit testing framework for C++.
-
 ## Running the Filter
 
 From the build directory, execute `./ExtendedKF`. The output should be:
